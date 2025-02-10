@@ -1,21 +1,10 @@
-<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>技术视界 | 首页</title>
-
-  
-  <!-- 其他head内容（如title、meta标签） -->
-  <style>
-    /* 覆盖导航栏的CSS */
-    header, .main-content {  /* 确保选择器匹配你的页面元素 */
-      position: relative;
-      z-index: 9999;
-      margin-top: -60px;     /* 根据实际导航栏高度调整 */
-    }
-  </style>
 
   <link rel="stylesheet" href="library/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
