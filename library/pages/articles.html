@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章目录 | 技术视界</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+      <!-- 修改导航栏链接自动打开 -->
+      <li><a href="articles.html#all-expand"><i class="fas fa-book-open"></i> 文章</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> 关于</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> 联系</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="knowledge-container">
+        <details id="网络基础" open>
+      <h1 class="section-title">知识库目录</h1>
+      
+      <!-- 知识点案例 -->
+      <div class="category-card">
+        <h2 class="category-title"><i class="fas fa-lightbulb"></i> 知识点案例</h2>
+        <div class="category-tree">
+          <details open>
+           
+            <summary>网络基础</summary>
+            <ul>
+              <li>
+                <details open>
+                  <summary>网络设备</summary>
+                  <ul class="article-list">
+                    <li>
+                      <a href="articles/知识点/网络设备及技术简介.html" class="article-item">
+                        <span class="article-title">网络设备及技术简介</span>
+                        <span class="article-meta">
+                          <time>2025-02-10</time>
+                          <span class="article-tag">网络基础</span>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="articles/知识点/网络拓扑详解.html" class="article-item">
+                        <span class="article-title">网络拓扑详解</span>
+                        <span class="article-meta">
+                          <time>2024-03-20</time>
+                          <span class="article-tag">网络基础</span>
+                        </span>
+                      </a>
+                    </li>
+
+
+                  </ul>
+                </details>
+              </li>
+              <li><span class="sub-category">协议分析</span></li>
+              <li><span class="sub-category">安全原理</span></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <!-- 实战案例 -->
+      <div class="category-card">
+        <h2 class="category-title"><i class="fas fa-laptop-code"></i> 实战案例</h2>
+        <div class="category-tree">
+          <ul>
+            <li><span class="sub-category">网络搭建</span></li>
+            <li><span class="sub-category">故障排查</span></li>
+            <li><span class="sub-category">性能优化</span></li>
+          </ul>
+        </div>
+      </div>
+    </details>
+    </div>
+  </main>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 自动展开逻辑
+      const expandAll = window.location.hash === '#all-expand';
+      const detailsElements = document.querySelectorAll('details');
+    
+      if (expandAll) {
+        detailsElements.forEach(detail => detail.open = true);
+        // 移除hash但不刷新页面
+        history.replaceState(null, null, ' ');
+      }
+    });
+    </script>
+    
+
+  <script src="../js/particles.js"></script>
+</body>
+</html>
