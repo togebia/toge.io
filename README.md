@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>技术视界 | 首页</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="library/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <nav class="navbar">
     <ul class="nav-links">
-      <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+      <li><a href="library/pages/index.html"><i class="fas fa-home"></i> 首页</a></li>
       <!-- 修改导航栏链接自动打开 -->
-      <li><a href="articles.html#all-expand"><i class="fas fa-book-open"></i> 文章</a></li>
-      <li><a href="about.html"><i class="fas fa-user"></i> 关于</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> 联系</a></li>
+      <li><a href="library/pages/articles.html#all-expand"><i class="fas fa-book-open"></i> 文章</a></li>
+      <li><a href="library/pages/about.html"><i class="fas fa-user"></i> 关于</a></li>
+      <li><a href="library/pages/contact.html"><i class="fas fa-envelope"></i> 联系</a></li>
     </ul>
   </nav>
 
@@ -24,8 +24,8 @@
         <h1 class="hero-title">探索数字世界的无限可能</h1>
         <p class="hero-subtitle">技术与创意交汇的前沿观察</p>
         <div class="cta-buttons">
-          <a href="articles.html" class="btn primary">阅读文章</a>
-          <a href="contact.html" class="btn secondary">联系作者</a>
+          <a href="library/pages/articles.html" class="btn primary">阅读文章</a>
+          <a href="library/pages/contact.html" class="btn secondary">联系作者</a>
         </div>
       </div>
     </section>
@@ -56,6 +56,6 @@
     </section>
   </main>
 
-  <script src="../js/particles.js"></script>
+  <script src="library/js/particles.js"></script>
 </body>
 </html>
