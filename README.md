@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .header-logged-out, .header-current-user { display: none !important; }
+    body { padding-top: 0 !important; }
+  </style>
   <title>技术视界 | 首页</title>
   <link rel="stylesheet" href="library/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
