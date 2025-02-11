@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络与安全技术全景概览 | togebia</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <style>
+        /* 新增专项样式 */
+        .tech-overview {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .technical-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .technical-table th {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .technical-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+        
+        .tech-highlight {
+            color: #2b6cb0;
+            font-weight: 500;
+        }
+        
+        .architecture-case {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="brand">togebia</div>
+            <div class="nav-links">
+                <a href="../../index.html" class="nav-link">首页</a>
+                <a href="../articles.html" class="nav-link active">技术文章</a>
+                <a href="../tools.html" class="nav-link">工具下载</a>
+                <a href="../about.html" class="nav-link">关于我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="tech-overview">
+        <h1 class="article-title">网络与安全技术全景概览</h1>
+        <div class="meta-info">
+            <span class="publish-date">更新日期：2025-02-11</span>
+            <span class="category-tag">技术白皮书</span>
+        </div>
+
+        <!-- 主网络设备 -->
+        <section class="content-box">
+            <h2>一、主网络设备及技术</h2>
+            <h3>1. 核心设备</h3>
+            <table class="technical-table">
+                <thead>
+                    <tr>
+                        <th>设备类型</th>
+                        <th>关键技术</th>
+                        <th>典型型号/方案</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>核心交换机</td>
+                        <td>100G/400G以太网、VXLAN、MLAG</td>
+                        <td>Cisco Nexus 9500、华为CE12800</td>
+                    </tr>
+                    <tr>
+                        <td>路由器</td>
+                        <td>BGP/OSPF、Segment Routing、IPv6过渡技术</td>
+                        <td>Juniper MX204、H3C SR8800</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. 技术应用</h3>
+            <ul class="expertise-list">
+                <li><span class="tech-highlight">智能运维：</span>Telemetry实时流量分析（采样率1秒级）</li>
+                <li><span class="tech-highlight">超低延迟：</span>金融行业组网时延 &lt;0.5ms（FPGA加速路由）</li>
+            </ul>
+        </section>
+
+        <!-- 安全技术 -->
+        <section class="content-box">
+            <h2>三、安全设备及技术</h2>
+            <table class="technical-table">
+                <thead>
+                    <tr>
+                        <th>设备/方案</th>
+                        <th>核心技术</th>
+                        <th>防御场景</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>下一代防火墙</td>
+                        <td>App-ID、威胁情报联动（STIX/TAXII）</td>
+                        <td>APT攻击阻断</td>
+                    </tr>
+                    <tr>
+                        <td>零信任代理网关</td>
+                        <td>SPI（单包授权）、持续身份验证</td>
+                        <td>远程办公接入</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>热点技术</h3>
+            <div class="architecture-case">
+                <h4>Cloudflare防御案例</h4>
+                <p>成功抵御2.3Tbps DDoS攻击，峰值流量细节：</p>
+                <ul>
+                    <li>攻击持续时间：15分钟</li>
+                    <li>请求类型：UDP反射放大攻击</li>
+                    <li>缓解策略：Anycast网络分流</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 技术趋势 -->
+        <section class="content-box">
+            <h2>七、技术趋势预测（2024-2026）</h2>
+            <ol class="expertise-list">
+                <li><strong>网络协议：</strong>QUIC协议占比预计突破50%</li>
+                <li><strong>无线革新：</strong>Wi-Fi 7理论速率达46Gbps</li>
+                <li><strong>安全焦点：</strong>AI生成式攻击检测准确率提升至98%</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2025 网络技术视界 - 保留所有权利</p>
+            <nav class="footer-links">
+                <a href="../about.html">关于我们</a>
+                <a href="../privacy.html">隐私政策</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
