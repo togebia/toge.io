@@ -23,10 +23,88 @@
 
     <!-- 主体内容 -->
     <main class="container">
-        <section class="hero-section">
-            <h1 class="hero-title">探索网络技术前沿</h1>
-            <p class="hero-subtitle">5G核心网 | 网络安全 | 云原生架构</p>
-        </section>
+  <!-- 修改主页index.html的对应部分 -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h2 class="hero-title">探索网络技术前沿</h2>
+        <p class="hero-subtitle">深度解析云计算、网络安全与AI实战</p>
+    </div>
+</section>
+
+<style>
+    /* 新增英雄区样式 */
+    .hero-section {
+        position: relative;
+        height: 400px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 2rem 0;
+        box-shadow: 0 8px 30px rgba(246, 245, 245, 0.12);
+    }
+
+    /* 背景图设置 */
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center 35%;
+        filter: grayscale(30%) brightness(0.8);
+        z-index: 1;
+    }
+
+    /* 内容容器 */
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 4rem;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 标题样式优化 */
+    .hero-title {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        max-width: 800px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        opacity: 0.95;
+        letter-spacing: 0.5px;
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+        .hero-section {
+            height: 300px;
+            margin: 1rem 0;
+        }
+
+        .hero-content {
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
 
         <!-- 精选文章 -->
         <section class="featured-articles">
@@ -48,6 +126,35 @@
                 </article>
 
                 <!-- 文章卡片2 -->
+                <article class="featured-card">
+                    <a href="waiting.html" class="article-link">
+                        <div class="card-content">
+                            <h3>敬请等待</h3>
+                            <p class="excerpt">敬请等待...</p>
+                            <div class="meta-info">
+                                <span class="tag">敬请等待</span>
+                                <span class="date">2025-02-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- 文章卡片3 -->
+                <article class="featured-card">
+                    <a href="waiting.html" class="article-link">
+                        <div class="card-content">
+                            <h3>敬请等待</h3>
+                            <p class="excerpt">敬请等待...</p>
+                            <div class="meta-info">
+                                <span class="tag">敬请等待</span>
+                                <span class="date">2025-02-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+
+                <!-- 文章卡片4 -->
                 <article class="featured-card">
                     <a href="waiting.html" class="article-link">
                         <div class="card-content">
