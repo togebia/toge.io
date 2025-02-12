@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>软件工具 | 网络技术视界</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <!-- 在<head>中新增工具页专属样式 -->
+    <link rel="stylesheet" href="../styles/tools.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="brand">togebia</div>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">首页</a>
+                <a href="articles.html" class="nav-link">归档</a>
+                <a href="tools.html" class="nav-link active">软件工具</a>
+                <a href="about.html" class="nav-link">关于</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container tools-container">
+        <h1 class="section-title">技术工具库</h1>
+        
+        <!-- 搜索框 -->
+        <div class="tool-search">
+            <input type="text" id="toolSearch" placeholder="搜索工具...">
+            <button type="button" onclick="searchTools()">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+            </button>
+        </div>
+        
+
+        <!-- 工具分类 -->
+        <div class="tool-categories">
+            <!-- 网络工具 -->
+            <section class="tool-category">
+                <h2 class="category-title">网络工具</h2>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Wireshark</h3>
+                            <span class="tool-version">v4.0.8</span>
+                        </div>
+                        <p class="tool-desc">专业网络协议分析工具，支持上千种协议解析</p>
+                        <div class="tool-meta">
+                            <span class="tool-os">Windows/macOS/Linux</span>
+                            <a href="https://www.wireshark.org/download.html" 
+                               class="download-btn"
+                               target="_blank"
+                               rel="noopener">
+                               下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Postman</h3>
+                            <span class="tool-version">v10.18</span>
+                        </div>
+                        <p class="tool-desc">API开发测试一体化平台，支持REST/SOAP协议</p>
+                        <div class="tool-meta">
+                            <span class="tool-os">全平台</span>
+                            <a href="https://www.postman.com/downloads/" 
+                               class="download-btn"
+                               target="_blank"
+                               rel="noopener">
+                               下载
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 安全工具 -->
+            <section class="tool-category">
+                <h2 class="category-title">安全工具</h2>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Nmap</h3>
+                            <span class="tool-version">v7.94</span>
+                        </div>
+                        <p class="tool-desc">网络探测和安全审核工具，支持大规模扫描</p>
+                        <div class="tool-meta">
+                            <span class="tool-os">跨平台</span>
+                            <a href="https://nmap.org/download.html" 
+                               class="download-btn"
+                               target="_blank"
+                               rel="noopener">
+                               下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Burp Suite</h3>
+                            <span class="tool-version">Community 2023.6</span>
+                        </div>
+                        <p class="tool-desc">Web应用安全测试工具，支持渗透测试全流程</p>
+                        <div class="tool-meta">
+                            <span class="tool-os">Windows/macOS/Linux</span>
+                            <a href="https://portswigger.net/burp/communitydownload" 
+                               class="download-btn"
+                               target="_blank"
+                               rel="noopener">
+                               下载
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 开发工具 -->
+            <section class="tool-category">
+                <h2 class="category-title">开发工具</h2>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>VS Code</h3>
+                            <span class="tool-version">v1.87</span>
+                        </div>
+                        <p class="tool-desc">微软开源代码编辑器，支持扩展生态</p>
+                        <div class="tool-meta">
+                            <span class="tool-os">全平台</span>
+                            <a href="https://code.visualstudio.com/download" 
+                               class="download-btn"
+                               target="_blank"
+                               rel="noopener">
+                               下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <h3>Docker Desktop</h3>
+                            <span class="tool-version">v4.26</span>
+                        </div>
+                        <p class="tool-desc">容器化开发部署解决方案</p>
+                        <div class="tool-meta">
+                            <span class="tool-os">Windows/macOS</span>
+                            <a href="https://www.docker.com/products/docker-desktop/" 
+                               class="download-btn"
+                               target="_blank"
+                               rel="noopener">
+                               下载
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+    // 工具搜索功能
+    function searchTools() {
+        const input = document.getElementById('toolSearch').value.toLowerCase();
+        const cards = document.querySelectorAll('.tool-card');
+        
+        cards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const desc = card.querySelector('.tool-desc').textContent.toLowerCase();
+            card.style.display = (title.includes(input) || desc.includes(input)) 
+                               ? 'block' 
+                               : 'none';
+        });
+    }
+
+    // 回车键触发搜索
+    document.getElementById('toolSearch').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') searchTools();
+    });
+    </script>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            网络技术视界 | Togebia
+        </div>
+    </footer>
+
+    <script src="../scripts/clickEffect.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

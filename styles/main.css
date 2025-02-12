@@ -1,0 +1,155 @@
+/* styles/main.css */
+@import url('core/variables.css');
+@import url('core/base.css');
+@import url('core/utilities.css');
+
+/* 组件 */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/navbar.css');
+@import url('components/footer.css');
+
+/* 页面区块 */
+@import url('sections/home.css');
+@import url('sections/archive.css');
+@import url('sections/tools.css');
+@import url('sections/about.css');
+
+/* 动画 */
+@import url('animations.css');
+
+/* styles/main.css */
+@import url('core/variables.css');
+@import url('core/base.css');
+@import url('core/utilities.css');
+@import url('components/buttons.css');
+@import url('components/cards.css'); /* 必须包含卡片样式 */
+@import url('components/navbar.css');
+@import url('components/footer.css');
+@import url('sections/home.css'); /* 首页专用样式 */
+@import url('animations.css');
+
+/* styles/main.css 新增导入 */
+@import url('sections/archive.css');
+
+
+/* 页脚样式 */
+.site-footer {
+    background: var(--footer-bg, #f8f9fa);
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* 确保页面撑满高度 */
+html, body {
+    height: auto;
+}
+
+body {
+    display: block;
+}
+
+main {
+    min-height: calc(100vh - 400px); /* 根据实际页头/页脚高度调整 */
+}
+
+/* 新的页脚定位方式 */
+.site-footer {
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem; /* 保持与内容间距 */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* ————————————————————————————————————————————————————————archive.html—————————————————————————————————————————————————————————————————————————————————— */
+
+/* 所有页面主标题 */
+.main-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2rem 0 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+}
+
+/* 副标题修正 */
+.sub-title {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+
+
+
+/* ————————————————————————————————————————————————————————archive.html—————————————————————————————————————————————————————————————————————————————————— */
+/* 添加以下样式 */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.featured-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 添加按钮基础样式 */
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--accent);
+    color: white !important;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #1a73e8;
+    box-shadow: 0 4px 12px rgba(26,115,232,0.3);
+}
+
+.navbar {
+    position: relative;
+    z-index: 10000; /* 确保导航栏在最顶层 */
+}
+
+/* ————————————————————————————————————————————————————————index.html—————————————————————————————————————————————————————————————————————————————————— */
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络技术视界 | 首页</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="brand">togebia</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">首页</a>
+                <a href="pages/articles.html" class="nav-link">归档</a>
+                <a href="pages/tools.html" class="nav-link">软件工具</a>
+                <a href="pages/about.html" class="nav-link">关于</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <main class="container main-content"> <!-- 添加main-content类应用动画 -->
+<!-- 修改主页index.html的对应部分 -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h2 class="hero-title">探索网络技术前沿</h2>
+        <p class="hero-subtitle">深度解析云计算、网络安全与AI实战</p>
+    </div>
+</section>
+
+<style>
+    /* 新增英雄区样式 */
+    .hero-section {
+        position: relative;
+        height: 400px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 2rem 0;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* 加深阴影颜色 */
+    }
+
+    /* 背景图设置 */
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center 35%;
+        filter: grayscale(30%) brightness(0.8);
+        z-index: 1;
+    }
+
+    /* 内容容器 */
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 4rem;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 标题样式优化 */
+    .hero-title {
+    color: #e8f1ff; /* 浅冰蓝色 */
+    text-shadow: 0 2px 8px rgba(18, 53, 128, 0.4); /* 深蓝阴影增强对比 */
+}
+
+    .hero-subtitle {
+    color: #d4e3ff; /* 稍深冰蓝 */
+    background: linear-gradient(to right, 
+        rgba(255,255,255,0.15) 0%,
+        rgba(255,255,255,0.05) 100%); /* 微渐变增强层次 */
+    display: inline-block;
+    padding: 0.2em 0.5em;
+}
+
+
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+        .hero-section {
+            height: 300px;
+            margin: 1rem 0;
+        }
+
+        .hero-content {
+            padding: 2rem;
+        }
+
+        .hero-title {
+        font-size: 2.2rem;
+        word-break: break-word; /* 添加换行规则 */
+        padding: 0 1rem; /* 增加内边距 */
+    }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+
+        <!-- 精选文章 -->
+        <section class="featured-articles">
+            <h2 class="section-title">精选技术文章</h2>
+            
+            <div class="article-grid">
+                <!-- 文章卡片1 -->
+                <article class="featured-card">
+                    <a href="waiting.html" class="article-link">
+                        <div class="card-content">
+                            <h3>敬请等待</h3>
+                            <p class="excerpt">敬请等待...</p>
+                            <div class="meta-info">
+                                <span class="tag">敬请等待</span>
+                                <span class="date">2025-02-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- 文章卡片2 -->
+                <article class="featured-card">
+                    <a href="waiting.html" class="article-link">
+                        <div class="card-content">
+                            <h3>敬请等待</h3>
+                            <p class="excerpt">敬请等待...</p>
+                            <div class="meta-info">
+                                <span class="tag">敬请等待</span>
+                                <span class="date">2025-02-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- 文章卡片3 -->
+                <article class="featured-card">
+                    <a href="waiting.html" class="article-link">
+                        <div class="card-content">
+                            <h3>敬请等待</h3>
+                            <p class="excerpt">敬请等待...</p>
+                            <div class="meta-info">
+                                <span class="tag">敬请等待</span>
+                                <span class="date">2025-02-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+
+                <!-- 文章卡片4 -->
+                <article class="featured-card">
+                    <a href="waiting.html" class="article-link">
+                        <div class="card-content">
+                            <h3>敬请等待</h3>
+                            <p class="excerpt">敬请等待...</p>
+                            <div class="meta-info">
+                                <span class="tag">敬请等待</span>
+                                <span class="date">2025-02-11</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 快速入口 -->
+        <section class="quick-links">
+            <div class="link-card">
+                <h3>技术文档库</h3>
+                <a href="pages/articles.html" class="cta-button">浏览全部文章 →</a>
+            </div>
+            <div class="link-card">
+                <h3>工具下载</h3>
+                <a href="pages/tools.html" class="cta-button">获取实用工具 →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            网络技术视界 | Togebia
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="scripts/clickEffect.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

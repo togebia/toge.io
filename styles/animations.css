@@ -1,0 +1,44 @@
+/* styles/animations.css */
+/* 优化后的点击特效 */
+.click-effect {
+    position: fixed;
+    pointer-events: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent); /* 保持与核心样式一致 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transform-origin: center;
+    animation: enhance-rise 1.2s ease-out forwards; /* 改用增强版上升动画 */
+}
+
+/* 增强版上升动画（整合了放大效果） */
+@keyframes enhance-rise {
+    0% { 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.25); /* 中间状态增强放大 */
+    }
+    100% { 
+        opacity: 0;
+        transform: translateY(-100px) scale(0.8); /* 最终缩小增加动感 */
+    }
+}
+
+/* 优化过渡动画 */
+.main-content {
+    animation: smooth-fade 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes smooth-fade {
+    from { 
+        opacity: 0;
+        transform: translateY(30px) rotateZ(1deg); /* 增加微旋转增强立体感 */
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0) rotateZ(0);
+    }
+}
