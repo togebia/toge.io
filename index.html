@@ -72,17 +72,18 @@
 
     /* 标题样式优化 */
     .hero-title {
-        font-size: 3.2rem;
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
-        max-width: 800px;
-    }
+    color: #e8f1ff; /* 浅冰蓝色 */
+    text-shadow: 0 2px 8px rgba(18, 53, 128, 0.4); /* 深蓝阴影增强对比 */
+}
 
     .hero-subtitle {
-        font-size: 1.5rem;
-        opacity: 0.95;
-        letter-spacing: 0.5px;
-    }
+    color: #d4e3ff; /* 稍深冰蓝 */
+    background: linear-gradient(to right, 
+        rgba(255,255,255,0.15) 0%,
+        rgba(255,255,255,0.05) 100%); /* 微渐变增强层次 */
+    display: inline-block;
+    padding: 0.2em 0.5em;
+}
 
     /* 响应式调整 */
     @media (max-width: 768px) {
