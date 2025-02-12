@@ -1,0 +1,133 @@
+/* tools.css */
+.tools-container {
+    max-width: 800px; /* 与归档页同宽 */
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* 主标题样式同步 */
+.section-title {
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin: 0 0 2rem 1rem;
+}
+
+/* 搜索框样式 */
+.tool-search {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+#toolSearch {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent);
+}
+
+/* 分类标题样式 */
+.category-title {
+    font-size: 1.6rem;
+    margin: 3rem 0 2rem 2rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+
+
+/* 工具卡片样式 */
+
+.category-title {
+    margin-left: 0; /* 重置原有左边距 */
+    padding-left: 1.5rem; /* 文字与竖线间距 */
+    position: relative;
+    z-index: 1;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.tool-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    transition: transform 0.2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-3px);
+}
+
+.tool-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.tool-version {
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+.tool-desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    min-height: 4em; /* 保持描述高度统一 */
+}
+
+.tool-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* 修改 tools.css */
+.download-btn {
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 2px solid transparent; /* 新增边框过渡 */
+}
+
+.download-btn:hover {
+    background: white;
+    color: var(--accent); /* 文字颜色变为主题色 */
+    border-color: var(--accent); /* 添加边框 */
+    opacity: 1; /* 取消透明度变化 */
+}
+
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-title {
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .tool-search {
+        flex-direction: column;
+    }
+}
