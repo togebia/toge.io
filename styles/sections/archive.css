@@ -1,0 +1,161 @@
+/* ————————————————————————————————————————————————————————articles.html—————————————————————————————————————————————————————————————————————————————————— */
+/* 新建 styles/sections/archive.css */
+.archives-container {
+    max-width: 800px; /* 原1200px改为更适合阅读的宽度 */
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+}
+
+/* 修改 sections/archive.css */
+.archive-title {
+    color: var(--accent); /* 使用主题蓝色 */
+    font-size: 2.2rem; /* 调大一级标题 */
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 1rem; /* 左对齐 */
+    text-align: left;
+    position: relative;
+    padding: 0;
+}
+
+.archive-title::after {
+    display: none;
+}
+
+
+/* 一级分类下横线 */
+.category-title {
+    border-left: none;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* 二级分类竖线连接 */
+.subcategory {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1.5rem;
+}
+
+/* 三级分类边框 */
+.article-item {
+    border: 1px solid var(--border-color);
+    margin: 1rem 0;
+    padding: 1.2rem;
+    background: var(--card-bg);
+}
+
+/* 添加新变量 */
+/* core/variables.css */
+:root {
+    --border-color: #e2e8f0; /* 浅灰色边框 */
+}
+
+.category-group {
+    background: transparent;
+    box-shadow: none;
+    padding: 1.5rem 0;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.category-title {
+    color: var(--heading-color);
+    font-size: 1.6rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    margin: 2rem 0 1.5rem 2rem;
+    margin-top: 0; /* 取消原有顶部间距 */
+}
+
+.subcategory {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1.5rem;
+}
+
+.subcategory-title {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.subcategory-title::before {
+    content: "";
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    height: 150%;
+    bottom: 1em;
+    width: 2px;
+    background: var(--border-color);
+    transform: translateY(-50%);
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 文章条目优化 */
+.article-item {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 8px;
+    background: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.article-item:hover {
+    background: var(--hover-bg);
+}
+
+.article-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 标题限制 */
+.article-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 限制标题最多显示两行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 元信息紧凑布局 */
+.article-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .archives-container {
+        padding: 1rem 0.5rem 3rem;
+    }
+    
+    .article-item {
+        padding: 1rem;
+    }
+    
+    .article-title {
+        font-size: 1rem;
+        -webkit-line-clamp: 3; /* 移动端允许显示三行 */
+    }
+}
+
+/* ————————————————————————————————————————————————————————articles.html—————————————————————————————————————————————————————————————————————————————————— */

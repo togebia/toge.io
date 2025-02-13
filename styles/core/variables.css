@@ -1,0 +1,23 @@
+/* styles/core/_variables.css */
+:root {
+    --primary: #2B6CB0;
+    --secondary: #4A5568;
+    --accent: #C53030;
+    --bg: #ffffff;
+    --border: #E2E8F0;
+    --transition: 0.3s ease;
+    --text-secondary: #718096;  /* 次级文本灰色 */
+    --text-muted: #a0aec0;      /* 淡灰色日期 */
+    --tag-bg: rgba(144,205,244,0.15); /* 浅蓝背景 */
+    --tag-text: #4299e1;        /* 标签文字蓝 */
+    --accent-dark: #1d4ed8; /* 更深的蓝色用于其他交互状态 */
+    --border-color: #e2e8f0; /* 浅灰边框 */
+    --card-bg: #ffffff;      /* 卡片背景 */
+}
+
+
+/* core/variables.css 新增 */
+:root {
+    --hover-bg: rgba(160, 174, 192, 0.08);
+    --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+}
