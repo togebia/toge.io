@@ -219,22 +219,7 @@
                     message: ["你复制了什么内容呢?记得注明出处哦~"]
                 }
             },
-            menus: {
-                items: [
-                    {
-                        id: 'SwitchModel',
-                        icon: 'icon-switch',
-                        title: '切换模型',
-                        onClick: function (oml2d) {
-                            oml2d.loadNextModel().then(() => {
-                                console.log('切换成功');
-                            });
-                        }
-                    }
-                ],
-                x: 5,
-                y: 10
-            }
+
         }).then(() => {
             console.log("OML2D loaded successfully.");
         }).catch(err => {
